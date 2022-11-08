@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rN1Wy5t1jZjwE0HWR3WXf1vVPchsxhyww/jwOfPpoGbtyY2YEsUYC56MO4CMnTM41mgzq7smtPRFc0ZNI5PpCg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lenovo\\Desktop\\portfolio\\Labinot_Krasniqi-Portfolio\\Labinot_Krasniqi-Portfolio\\Labinot_Krasniqi-Portfolio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}
