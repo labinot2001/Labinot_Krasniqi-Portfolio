@@ -38,7 +38,7 @@ body {
     .navbar.sticky {
         padding: 15px 0;
         /*background: crimson;*/
-        background: #212F3D;
+        background: #002232;
     }
 
     .navbar .max-width {
@@ -163,10 +163,11 @@ body {
 }
 
     .about .about-content .left img {
-        height: 400px;
+        height: 400px;     /*400px*/
         width: 400px;
         object-fit: cover;
         border-radius: 6px;
+        
     }
 
 .about .about-content .right {
