@@ -129,22 +129,25 @@ body {
             font-weight: 700;
         }
 
+
+
     .home .home-content a {
         display: inline-block;
         /*background: crimson;*/
-        background: crimson;
+        background: #002232;
         color: #fff;
         font-size: 25px;
         padding: 12px 36px;
         margin-top: 20px;
         font-weight: 400;
         border-radius: 6px;
-        border: 2px solid crimson;
+        border: 2px solid #CCCCFF;
         transition: all 0.3s ease;
     }
 
         .home .home-content a:hover {
-            color: crimson;
+            /*color: crimson;*/
+            color: #8af0f3;
             background: none;
         }
 
@@ -190,19 +193,19 @@ body {
 
     .about .about-content .right a {
         display: inline-block;
-        background: crimson;
+        background: #002232;
         color: #fff;
         font-size: 20px;
         font-weight: 500;
         padding: 10px 30px;
         margin-top: 20px;
         border-radius: 6px;
-        border: 2px solid crimson;
+        border: 2px solid #ccccff;
         transition: all 0.3s ease;
     }
 
         .about .about-content .right a:hover {
-            color: crimson;
+            color: #8af0f3;
             background: none;
         }
 /* section padding ...*/
@@ -249,7 +252,7 @@ section {
     }
 
         .services .serv-content .card:hover {
-            background: crimson;
+            background: #002232;
         }
 
         .services .serv-content .card .box {
@@ -304,19 +307,19 @@ section {
 
 .skills .skills-content .left a {
     display: inline-block;
-    background: crimson;
+    background: #002232;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #ccccff;
     transition: all 0.3s ease;
 }
 
     .skills .skills-content .left a:hover {
-        color: crimson;
+        color: #8af0f3;
         background: none;
     }
 
@@ -396,7 +399,8 @@ section {
 }
 
     .experience .carousel .card:hover {
-        background: crimson;
+        background: #002232;
+        border-color: #8af0f3;
     }
 
     .experience .carousel .card .box {
@@ -422,7 +426,7 @@ section {
         width: 150px;
         object-fit: cover;
         border-radius: 50%;
-        border: 5px solid crimson;
+        border: 5px solid white;
         transition: all 0.3s ease;
     }
 
@@ -441,7 +445,7 @@ section {
     margin: 0 5px;
     outline: none !important;
     border-radius: 50%;
-    border: 2px solid crimson !important;
+    border: 2px solid #002232 !important;
     transition: all 0.3s ease;
 }
 
@@ -452,7 +456,7 @@ section {
 
     .owl-dot.active,
     .owl-dot:hover {
-        background: crimson !important;
+        background: #8af0f3 !important;
     }
 
 
@@ -492,7 +496,7 @@ section {
 
     .contact .contact-content .row i {
         font-size: 25px;
-        color: crimson;
+        color: #8af0f3;
     }
 
 .contact .contact-content .info .head {
@@ -562,13 +566,13 @@ section {
     border-radius: 6px;
     cursor: pointer;
     flex-wrap: nowrap;
-    background: crimson;
-    border: 2px solid crimson;
+    background: #002232;
+    border: 2px solid #ccccff;
     transition: all 0.3s ease;
 }
 
     .right form .button-area button:hover {
-        color: crimson;
+        color: #8af0f3;
         background: none;
     }
 .contact{
@@ -589,12 +593,13 @@ footer {
 }
 
     footer span a {
-        color: crimson;
+        color: #8af0f3;
         text-decoration: none;
     }
 
         footer span a:hover {
             text-decoration: underline;
+            color:whitesmoke;
         }
 
 /*  responsive  */

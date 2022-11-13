@@ -1,7 +1,9 @@
 using Labinot_Krasniqi_Portfolio.Data;
+using Labinot_Krasniqi_Portfolio.Data.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -30,7 +32,11 @@ namespace Labinot_Krasniqi_Portfolio
 
             // AppDbContext
 
-            services.AddDbContext<AppDbContext>();
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.
+                GetConnectionString("DefaultConnectionString")));
+            //services configuration
+
+            services.AddScoped<IContactServices, ContactServices>();
 
 
         }
