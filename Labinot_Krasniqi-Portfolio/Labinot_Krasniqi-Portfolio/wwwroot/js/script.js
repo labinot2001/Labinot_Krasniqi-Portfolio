@@ -60,3 +60,44 @@ $(document).ready(function () {
         }
     });
 });
+
+//text animation
+
+var textWrapper = document.querySelector('.txt');
+var textWrapper2 = document.querySelector('.txt2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter2'>$&</span>");
+anime.timeline({ loop: true })
+    .add({
+        targets: '.txt .letter',
+        scale: [4, 1],
+        opacity: [0, 1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: (el, i) => 70 * i
+    }).add({
+        targets: '.txt',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+    });
+
+// txt2
+anime.timeline({ loop: true })
+    .add({
+        targets: '.txt2 .letter2',
+        scale: [4, 1],
+        opacity: [0, 1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: (el, i) => 70 * i
+    }).add({
+        targets: '.txt2',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+    });

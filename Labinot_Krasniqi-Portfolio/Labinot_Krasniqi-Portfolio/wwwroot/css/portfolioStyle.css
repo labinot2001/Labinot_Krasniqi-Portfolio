@@ -287,6 +287,25 @@ section {
 
 /* skills section styling */
 
+.txt {
+    font-weight: 900;
+    font-size: 3.5em;
+}
+
+    .txt .letter {
+        display: inline-block;
+    
+    }
+
+.txt2 {
+    font-weight: 900;
+    font-size: 3.5em;
+}
+
+    .txt2 .letter2 {
+        display: inline-block;
+    }
+
 .skills .title::after {
     /*content: "what i know";*/
 }

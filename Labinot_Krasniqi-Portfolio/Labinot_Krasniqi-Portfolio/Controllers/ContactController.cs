@@ -7,7 +7,7 @@ namespace Labinot_Krasniqi_Portfolio.Controllers
     public class ContactController : Controller
     {
         private readonly IContactServices _service;
-
+       
         public ContactController(IContactServices service)
         {
             _service = service;
