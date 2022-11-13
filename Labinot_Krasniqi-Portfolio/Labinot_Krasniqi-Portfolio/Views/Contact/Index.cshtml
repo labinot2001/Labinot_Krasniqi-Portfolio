@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Contact>
+
+@{
+    ViewData["Title"] = "List of messages from Contacts ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div>
+    <div >
+        <table >
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.FullName)</th>
+                    <th>@Html.DisplayNameFor(model => model.Email)</th>
+                    <th>@Html.DisplayNameFor(model => model.Subject)</th>
+                    <th>@Html.DisplayNameFor(model => model.Message)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FullName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Subject)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Message)
+                        </td>
+                        <td>
+                            <a  asp-action="Delete" asp-route-id="@item.Id"> Delete </a>
+                        </td>
+
+                    </tr>
+
+                }
+
+            </tbody>
+
+        </table>
+    </div>
+</div>

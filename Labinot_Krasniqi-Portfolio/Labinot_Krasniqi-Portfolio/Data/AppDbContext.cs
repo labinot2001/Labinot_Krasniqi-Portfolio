@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Labinot_Krasniqi_Portfolio.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Labinot_Krasniqi_Portfolio.Data
 {
@@ -9,6 +10,10 @@ namespace Labinot_Krasniqi_Portfolio.Data
         {
 
         }
+
+        public DbSet<Contact> Contacts { get; set; }
+
+
 
     }
 }

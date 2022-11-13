@@ -1,0 +1,25 @@
+﻿@model Contact
+
+
+
+<!--   start Contact form-->
+<form id="contact" asp-action="Contact">
+    <div class="fields">
+        <div class="field name">
+            <input id="fullName" asp-for="FullName" type="text" placeholder="Name" required>
+        </div>
+        <div class="field email">
+            <input asp-for="Email" type="email" placeholder="Email" required>
+        </div>
+    </div>
+    <div class="field">
+        <input asp-for="Subject" type="text" placeholder="Subject" required>
+    </div>
+    <div class="field textarea">
+        <textarea asp-for="Message" cols="30" rows="10" placeholder="Message.." required></textarea>
+    </div>
+    <div class="button-area">
+        <button asp-action="Index">Back to Home</button>
+
+    </div>
+</form>
